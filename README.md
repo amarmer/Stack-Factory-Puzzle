@@ -28,6 +28,13 @@ struct X2: public X
   void Process() override { std::cout << "X2::Process\n"; }
 };
 
+struct X3: public X
+{
+  X3() { std::cout << "X3::X3 "; }
+    
+  void Process() override { std::cout << "X3::Process\n"; }
+};
+
 int main()
 {
   for (auto i = 0; i < 3; i++)
