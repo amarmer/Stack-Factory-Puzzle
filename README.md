@@ -9,6 +9,12 @@ X2::X2 X2::Process: 12345<br/>
 #include <iostream>
 #include <string>
 
+struct X
+{
+  virtual ~X() {}
+  virtual void Process() = 0;
+};
+
 struct X0: public X
 {
   X0() { std::cout << "X0::X0 "; }
