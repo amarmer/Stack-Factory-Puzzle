@@ -14,6 +14,13 @@ struct X
   virtual void Process() = 0;
 };
 
+struct X0: public X
+{
+  X0() { std::cout << "X0::X0 "; }
+    
+  void Process() override { std::cout << "X0::Process\n"; }
+};
+
 struct X1: public X
 {
   X1() { std::cout << "X1::X1 "; }
@@ -26,13 +33,6 @@ struct X2: public X
   X2() { std::cout << "X2::X2 "; }
     
   void Process() override { std::cout << "X2::Process\n"; }
-};
-
-struct X3: public X
-{
-  X3() { std::cout << "X3::X3 "; }
-    
-  void Process() override { std::cout << "X3::Process\n"; }
 };
 
 int main()
