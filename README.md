@@ -5,6 +5,8 @@ X0::X0 X0::Process<br/>
 X1::X1 X1::Process<br/>
 X2::X2 X2::Process<br/>
 
+Template struct `X` should not be specialized.
+
 ```C++
 #include <iostream>
 
