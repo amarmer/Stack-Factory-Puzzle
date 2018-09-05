@@ -5,40 +5,38 @@ X0::X0 X0::Process<br/>
 X1::X1 X1::Process<br/>
 X2::X2 X2::Process<br/>
 
-Template struct `X` should not be specialized and only X<0>, X<1>, X<2> structures can be used.
-
 ```C++
 #include <iostream>
 
-struct IX
+struct X
 {
-  virtual ~IX() {}
+  virtual ~X() {}
   virtual void Process() = 0;
 };
 
-template <int N>
-struct X: public IX
+struct X1: public X
 {
-  X() 
-  { 
-    std::cout << "X" << N << "::X" << N << " "; 
-  }
+  X1() { std::cout << "X1::X1 "; }
     
-  virtual void Process() 
-  { 
-    std::cout << "X" << N << "::Process\n"; 
-  }
+  void Process() override { std::cout << "X1::Process\n"; }
+};
+
+struct X2: public X
+{
+  X2() { std::cout << "X2::X2 "; }
+    
+  void Process() override { std::cout << "X2::Process\n"; }
 };
 
 int main()
 {
   for (auto i = 0; i < 3; i++)
   {
-    IX* pIX = nullptr;
+    X* pX = nullptr;
 
     // Code should be here.
 
-    pIX->Process();
+    pX->Process();
   }
 
   return 0;
