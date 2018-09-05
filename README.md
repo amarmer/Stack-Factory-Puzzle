@@ -5,7 +5,7 @@ X0::X0 X0::Process<br/>
 X1::X1 X1::Process<br/>
 X2::X2 X2::Process<br/>
 
-Template struct `X` should not be specialized.
+Template struct `X` should not be specialized and only X<0>, X<1>, X<2> structures can be used.
 
 ```C++
 #include <iostream>
