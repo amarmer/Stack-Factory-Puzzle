@@ -1,7 +1,7 @@
 ### Stack Factory Puzzle
 
 What code should be instead of function `main` comments, which doesn't call `new` and program output to console is:<br/><br/>
-X0::X0 X0::Process: A	X0::~X0<br/>
+X0::X0 X0::Process: A&nbsp; &nbsp; X0::~X0<br/>
 X1::X1 X1::Process: ABC	X1::~X1<br/>
 X2::X2 X2::Process: 123	X2::~X2<br/>
 
