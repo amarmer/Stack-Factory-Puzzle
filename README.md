@@ -2,7 +2,7 @@
 
 #### Solution of the puzzle shows that in some cases objects derived from the same class can be created on the stack.
 
-In `main`, code between comments `// Begin` and `// End` creates objects `X0`, `X1`, `X2` (based on `i`) on the heap.<br/>
+In `main`, code between comments `Begin` and `End` creates objects `X0`, `X1`, `X2` (based on `i`) on the heap.<br/>
 It is similar to a factory function which creates objects on the heap and returns pointer to their base class.<br/>
 Console output of the program is:
 ```C++
@@ -10,7 +10,7 @@ X0::X0 X0::Process: A   X0::~X0
 X1::X1 X1::Process: ABC	X1::~X1
 X2::X2 X2::Process: 123	X2::~X2
 ```
-How to modify code between the comments `// Begin` and `// End`, that it doesn't call `new` and console output is the same.
+How to modify code between the comments `Begin` and `End`, that it doesn't call `new` and console output is the same.
 <br/>
 
 ```C++
