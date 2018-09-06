@@ -2,8 +2,8 @@
 
 #### Solution of the puzzle shows how in some cases objects derived from the same class can be created on the stack.
 
-In `main`, code between comments `Begin` `End` creates objects `X0` or `X1` or `X2` (depends on `i`) on the heap,<br/>
-similar to a factory function which creates objects on the heap and returns pointer to their base class.<br/>
+In `main`, code between comments `Begin` `End` creates objects `X0` or `X1` or `X2` (depends on `i`) on the heap<br/>
+(similar to a factory function which creates objects on the heap and returns pointer to their base class).<br/>
 Console output of the program is:
 ```C++
 X0::X0 X0::Process: A   X0::~X0
