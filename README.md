@@ -1,6 +1,6 @@
 ### Stack Factory Puzzle
 
-What code should be instead of function `main` comments, which doesn't call `new` and program output to console is:<br/><br/>
+What code should be instead of function `main` comments, which doesn't call `new` and program output to console is:<br/>
 ```C++
 X0::X0 X0::Process: A   X0::~X0
 X1::X1 X1::Process: ABC	X1::~X1
