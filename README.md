@@ -1,6 +1,7 @@
 ### Stack Factory Puzzle
 
-#### Solution of the puzzle shows how instances of classes derived from the same class can be created on the stack.
+#### When instances of classes derived from the same class need to be created based on certain conditions, they are created on the heap. The puzzle is about how to do it on the stack.
+
 
 In `main`, code between comments `Begin` `End` creates objects `X0` or `X1` or `X2` (depends on `i`) on the heap<br/>
 (similar to a factory function which creates objects of classes on the heap and returns pointer to their base class).<br/>
