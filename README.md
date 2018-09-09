@@ -20,11 +20,18 @@ How to modify code between the comments `Begin` `End`, that it doesn't call `new
 
 struct X
 {
+  friend struct X0;
+  friend struct X1;
+  friend struct X2;
+  
   virtual ~X() {}
   virtual void Process() = 0;
+  
+private:
+  X() {}
 };
 
-struct X0: public X
+struct X0 final: public X
 {
   X0() { std::cout << "X0::X0 "; }
   ~X0() { std::cout << "\tX0::~X0\n"; }
@@ -34,7 +41,7 @@ struct X0: public X
   char c_ = 'A';
 };
 
-struct X1: public X
+struct X1 final: public X
 {
   X1() { std::cout << "X1::X1 "; }
   ~X1() { std::cout << "\tX1::~X1\n"; }
@@ -44,7 +51,7 @@ struct X1: public X
   std::string s_ = "ABC";
 };
 
-struct X2: public X
+struct X2 final: public X
 {
   X2() { std::cout << "X2::X2 "; }
   ~X2() { std::cout << "\tX2::~X2\n"; }
