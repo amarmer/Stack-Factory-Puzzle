@@ -68,14 +68,19 @@ int main()
     X* pX = nullptr;
 
     // Begin 
+    
+    constexpr auto max = [](size_t left, size_t right) { return left < right ? right : left; };
+    constexpr auto bufferSize = max(sizeof(X0), max(sizeof(X1), sizeof(X2)));
+
+    uint8_t buffer[bufferSize];
+    
     if (i == 0)
-      pX = new X0;
+      pX = new(buffer) X0;
     else if (i == 1)
-      pX = new X1;
+      pX = new(buffer) X1;
     else 
-      pX = new X2;
-      
-    std::unique_ptr<X> x{pX};    
+      pX = new(buffer) X2;
+       
     // End
 
     pX->Process();
