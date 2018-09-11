@@ -11,7 +11,7 @@ X0::X0 X0::Process: A   X0::~X0
 X1::X1 X1::Process: ABC	X1::~X1
 X2::X2 X2::Process: 123	X2::~X2
 ```
-How to modify code between the comments `Begin` `End`, that it doesn't call `new` and console output is the same.<br/>
+How to modify code between the comments `Begin` `End`, that it doesn't call `new` nor `placement new` and output is the same.<br/>
 
 ```C++
 #include <iostream>
