@@ -85,4 +85,4 @@ int main()
 }
 ```
 
-#### Solution is already published in Stack-Factory-Puzzle/pull/2
+#### [Solution](https://github.com/amarmer/Stack-Factory-Puzzle/pull/2) is already published. 
