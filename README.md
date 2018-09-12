@@ -83,3 +83,6 @@ int main()
 
   return 0;
 }
+```
+
+#### Solution is already published in https://github.com/amarmer/Stack-Factory-Puzzle/pull/2
