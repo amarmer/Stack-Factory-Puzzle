@@ -80,7 +80,10 @@ int main()
       pX = new(buffer) X1;
     else 
       pX = new(buffer) X2;
-       
+    
+    constexpr auto deleter = [](X* x){ x->~X(); };
+    std::unique_ptr<X, decltype(deleter)> p{ pX, deleter };
+    
     // End
 
     pX->Process();
