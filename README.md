@@ -85,4 +85,4 @@ int main()
 }
 ```
 
-#### [Solution](https://twitter.com/isocpp/status/1039615649759211520) and [Solution](https://github.com/amarmer/Stack-Factory-Puzzle/pull/2) are already published. 
+#### The same [Solution](https://twitter.com/isocpp/status/1039615649759211520) and [Solution](https://github.com/amarmer/Stack-Factory-Puzzle/pull/2) are already published. 
