@@ -1,5 +1,7 @@
 ### Stack Factory Puzzle
 
+Published in https://isocpp.org/blog/2018/09/stack-factory-puzzle
+
 #### When instances of classes derived from the same class need to be created based on certain conditions,<br/>they are created on the heap. The puzzle is about how to create them on the stack.
 
 
