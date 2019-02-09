@@ -70,14 +70,15 @@ int main()
     X* pX = nullptr;
 
     // Begin 
-    if (i == 0)
-      pX = new X0;
-    else if (i == 1)
-      pX = new X1;
-    else 
-      pX = new X2;
-      
-    std::unique_ptr<X> x{pX};    
+    X&& instance =
+        i == 0 ? (X&&)X0{} :
+        i == 1 ? (X&&)X1{} :
+        (X&&)X2{};
+    
+    // we could get rid of ptrs and use normal calls
+    // instance.Process();
+    
+    pX = &instance;
     // End
 
     pX->Process();
